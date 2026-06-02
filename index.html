@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar Documento</title>
+    <style>
+        /* Estilo para el fondo amarillo oscuro */
+        body {
+            background-color: #DAA520; /* Amarillo oscuro */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenedor principal para centrar el contenido */
+        .contenedor {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo del botón/documento de descarga */
+        .enlace-descarga {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 30px 40px;
+            border: 3px dashed #DAA520;
+            border-radius: 8px;
+            background-color: #fff;
+            transition: transform 0.2s, background-color 0.2s;
+            cursor: pointer;
+        }
+
+        .enlace-descarga:hover {
+            background-color: #fff8e7;
+            transform: scale(1.05);
+        }
+
+        .instruccion {
+            color: #555;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <p class="instruccion">Haz clic en el documento para descargarlo:</p>
+        
+        <a href="Hola.pdf" download="Hola.pdf" class="enlace-descarga">
+            📄 Hola.pdf
+        </a>
+    </div>
+
+</body>
+</html>
